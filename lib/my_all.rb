@@ -19,6 +19,6 @@ def my_all?(collection)
 end
 
 #calling method
-my_all?(collection) do |element|
+my_all?([1,2,3]) do |element|
   element < 2
 end
