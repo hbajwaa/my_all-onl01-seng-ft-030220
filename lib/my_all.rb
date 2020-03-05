@@ -6,7 +6,7 @@ def my_all?(collection)
   
   while i < collection.length
     element = collection[i]
-    block_return_values << yield element
+    block_return_values << yield(element)
     i += 1
   end
   
@@ -19,6 +19,6 @@ def my_all?(collection)
 end
 
 #calling method
-my_all(collection) do |element|
+my_all?(collection) do |element|
   element < 2
 end
